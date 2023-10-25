@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <Title>Undine bindings for Arch ECS</Title>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Arch" Version="1.2.7" />
+    <PackageReference Include="Undine.Core" Version="0.0.0.6" />
+  </ItemGroup>
+
+</Project>
