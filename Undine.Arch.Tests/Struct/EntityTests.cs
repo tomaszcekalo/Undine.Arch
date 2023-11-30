@@ -5,10 +5,12 @@ using System.Linq;
 using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
+using Undine.Arch.Struct;
 using Undine.Arch.Tests.Components;
 using Undine.Core;
+using Undine.Core.Struct;
 
-namespace Undine.Arch.Tests
+namespace Undine.Arch.Tests.Struct
 {
     [TestClass]
     public class EntityTests

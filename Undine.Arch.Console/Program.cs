@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using Undine.Arch;
+using Undine.Arch.Struct;
 using Undine.Core;
+using Undine.Core.Struct;
 
 Console.WriteLine("Hello, World!");
 var container = new ArchContainer();
