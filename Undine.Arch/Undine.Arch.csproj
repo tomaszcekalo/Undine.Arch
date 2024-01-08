@@ -5,7 +5,7 @@
     <Nullable>enable</Nullable>
     <Title>Undine bindings for Arch ECS</Title>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-	  <Version>0.0.0.1</Version>
+	  <Version>0.0.0.8</Version>
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	  <RepositoryUrl>https://github.com/tomaszcekalo/Undine.Arch</RepositoryUrl>
 	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -20,7 +20,7 @@
 
   <ItemGroup>
     <PackageReference Include="Arch" Version="1.2.7" />
-    <PackageReference Include="Undine.Core" Version="0.0.1" />
+    <PackageReference Include="Undine.Core" Version="0.0.0.8" />
   </ItemGroup>
 
 </Project>
