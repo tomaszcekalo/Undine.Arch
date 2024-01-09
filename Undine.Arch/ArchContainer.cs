@@ -1,11 +1,10 @@
 ﻿using Arch.Core;
+using Arch.Core.Extensions;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using Undine.Core;
-using Undine.Core.Class;
 
-namespace Undine.Arch.Class
+namespace Undine.Arch
 {
     public class ArchContainer : EcsContainer
     {
@@ -13,7 +12,7 @@ namespace Undine.Arch.Class
 
         public ArchContainer()
         {
-            World = World.Create();
+            this.World = World.Create();
         }
 
         public World World { get; }
@@ -23,7 +22,7 @@ namespace Undine.Arch.Class
             systems.Add(new ArchSystem<A>()
             {
                 System = system,
-                World = World
+                World = this.World
             });
         }
 
@@ -32,7 +31,7 @@ namespace Undine.Arch.Class
             systems.Add(new ArchSystem<A, B>()
             {
                 System = system,
-                World = World
+                World = this.World
             });
         }
 
@@ -41,7 +40,7 @@ namespace Undine.Arch.Class
             systems.Add(new ArchSystem<A, B, C>()
             {
                 System = system,
-                World = World
+                World = this.World
             });
         }
 
@@ -50,7 +49,7 @@ namespace Undine.Arch.Class
             systems.Add(new ArchSystem<A, B, C, D>()
             {
                 System = system,
-                World = World
+                World = this.World
             });
         }
 
@@ -67,7 +66,7 @@ namespace Undine.Arch.Class
             return new ArchSystem<A>()
             {
                 System = system,
-                World = World
+                World = this.World
             };
         }
 
@@ -76,7 +75,7 @@ namespace Undine.Arch.Class
             return new ArchSystem<A, B>()
             {
                 System = system,
-                World = World
+                World = this.World
             };
         }
 
@@ -85,7 +84,7 @@ namespace Undine.Arch.Class
             return new ArchSystem<A, B, C>()
             {
                 System = system,
-                World = World
+                World = this.World
             };
         }
 
@@ -94,7 +93,7 @@ namespace Undine.Arch.Class
             return new ArchSystem<A, B, C, D>()
             {
                 System = system,
-                World = World
+                World = this.World
             };
         }
 

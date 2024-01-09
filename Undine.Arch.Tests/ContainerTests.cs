@@ -4,12 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Undine.Arch.Struct;
 using Undine.Arch.Tests.Components;
 using Undine.Core;
-using Undine.Core.Struct;
 
-namespace Undine.Arch.Tests.Struct
+namespace Undine.Arch.Tests
 {
     [TestClass]
     public class ContainerTests

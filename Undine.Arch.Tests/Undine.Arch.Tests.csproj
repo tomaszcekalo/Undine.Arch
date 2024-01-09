@@ -21,9 +21,4 @@
     <ProjectReference Include="..\Undine.Arch\Undine.Arch.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Class\" />
-    <Folder Include="Unmanaged\" />
-  </ItemGroup>
-
 </Project>

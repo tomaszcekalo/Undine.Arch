@@ -3,9 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Undine.Core;
-using Undine.Core.Struct;
 
-namespace Undine.Arch.Struct
+using Undine.Core;
+
+namespace Undine.Arch
 {
     public class ArchSystem<A> : ISystem
         where A : struct
