@@ -41,6 +41,20 @@ namespace Undine.Arch.Tests
 
             ref var component = ref entity.GetComponent<AComponent>();
             Assert.IsNotNull(component);
-        }//
+        }
+
+        [TestMethod]
+        public void ComponentCanBeRemoved()
+        {
+            var container = new ArchContainer();
+            var mock = Substitute.For<UnifiedSystem<AComponent>>();
+            container.AddSystem(mock);
+            container.Init();
+            var entity = (ArchEntity)container.CreateNewEntity();
+            entity.AddComponent(new AComponent());
+
+            ref var component = ref entity.GetComponent<AComponent>();
+            entity.RemoveComponent<AComponent>();   
+        }
     }
 }

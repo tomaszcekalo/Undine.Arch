@@ -21,5 +21,10 @@ namespace Undine.Arch
             ref var result = ref this.Entity.Get<A>();
             return ref result;
         }
+
+        public void RemoveComponent<A>() where A : struct
+        {
+            this.Entity.Remove<A>();
+        }
     }
 }

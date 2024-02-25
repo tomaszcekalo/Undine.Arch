@@ -61,6 +61,15 @@ namespace Undine.Arch
             };
         }
 
+        public override void DeleteEntity(IUnifiedEntity entity)
+        {
+            var entityToRemove = entity as ArchEntity;
+            if (entityToRemove is not null)
+            {
+                this.World.Destroy(entityToRemove.Entity);
+            }
+        }
+
         public override ISystem GetSystem<A>(UnifiedSystem<A> system)
         {
             return new ArchSystem<A>()
