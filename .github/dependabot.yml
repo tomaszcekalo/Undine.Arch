@@ -5,7 +5,8 @@
 
 version: 2
 updates:
-  - package-ecosystem: "NuGet" # See documentation for possible values
+  - package-ecosystem: "nuget" # See documentation for possible values
+  # Must match one of the following values: npm, bundler, composer, devcontainers, dotnet-sdk, maven, mix, cargo, gradle, nuget, gomod, docker, docker-compose, elm, gitsubmodule, github-actions, pip, terraform, pub, rust-toolchain, swift, bun, uv, vcpkg, helm, conda
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
